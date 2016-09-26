@@ -1,0 +1,978 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dis",
+				"displayErrorMessage(message)	(attribute, function)"
+			],
+			[
+				"getSelectedEndD",
+				"getSelectedEndDate()	(attribute, function)"
+			],
+			[
+				"get",
+				"getSelectedStartDate	function"
+			],
+			[
+				"total",
+				"totalDifference	statement"
+			],
+			[
+				"progr",
+				"progressPopupDescription	statement"
+			],
+			[
+				"_dis",
+				"_dismissPopup()	(attribute, function)"
+			],
+			[
+				"pro",
+				"progressBar	statement"
+			],
+			[
+				"minL",
+				"minLongitude	statement"
+			],
+			[
+				"size",
+				"size_hint"
+			],
+			[
+				"BOT",
+				"BOT_LEFT_LON	statement"
+			],
+			[
+				"MA",
+				"MAX_SOLAR_X_DIMENSION	statement"
+			],
+			[
+				"M",
+				"MAX_SOLAR_Y_DIMENSION	statement"
+			],
+			[
+				"textD",
+				"textDatabaseManager"
+			],
+			[
+				"limite",
+				"limitedView	(imported, module)"
+			],
+			[
+				"solar",
+				"solarDataTextUtils"
+			],
+			[
+				"ima",
+				"imageGenerator"
+			],
+			[
+				"cosine",
+				"cosineAdjusted"
+			],
+			[
+				"cosi",
+				"cosineAdjusted"
+			],
+			[
+				"year",
+				"yearPath"
+			],
+			[
+				"name",
+				"namePlateMW"
+			],
+			[
+				"wa",
+				"wattsToPSH"
+			],
+			[
+				"getTim",
+				"getTimeseriesData"
+			],
+			[
+				"end",
+				"endDate"
+			],
+			[
+				"time",
+				"timeseries"
+			],
+			[
+				"getsele",
+				"getSelectedLongitude"
+			],
+			[
+				"sizeM",
+				"sizeMWLabel"
+			],
+			[
+				"getSe",
+				"getSelectedDatetime"
+			],
+			[
+				"sim",
+				"simulationPopup"
+			],
+			[
+				"sele",
+				"selected_datetime"
+			],
+			[
+				"heatmapP",
+				"heatmapPopupDescription"
+			],
+			[
+				"ba",
+				"batteryPortfolioButton"
+			],
+			[
+				"sol",
+				"solarPortfolioButton"
+			],
+			[
+				"emp",
+				"emptyArray"
+			],
+			[
+				"N",
+				"EMPTY_DATA_NUMBER"
+			],
+			[
+				"price",
+				"priceDollarsPerMWh"
+			],
+			[
+				"value",
+				"valueAndLevel"
+			],
+			[
+				"valu",
+				"valueAndLevel"
+			],
+			[
+				"ma",
+				"maxValueDestination"
+			],
+			[
+				"max",
+				"maxValueStorageLevel"
+			],
+			[
+				"stora",
+				"storageLevel"
+			],
+			[
+				"stor",
+				"storageLevel"
+			],
+			[
+				"secon",
+				"secondLoopFraction"
+			],
+			[
+				"star",
+				"startIndex"
+			],
+			[
+				"save",
+				"saveDialog"
+			],
+			[
+				"bot",
+				"bottomBarLayout"
+			],
+			[
+				"bo",
+				"bottomBarLayout"
+			],
+			[
+				"ex",
+				"exportTimeseries"
+			],
+			[
+				"gener",
+				"generateHeatmapButton"
+			],
+			[
+				"start",
+				"startPicker"
+			],
+			[
+				"bottom",
+				"bottomLeftBox"
+			],
+			[
+				"getS",
+				"getSolarStartDatetime"
+			],
+			[
+				"map",
+				"mapImg"
+			],
+			[
+				"gene",
+				"generateExportButton"
+			],
+			[
+				"sel",
+				"selected_datetime"
+			],
+			[
+				"endD",
+				"endDate"
+			],
+			[
+				"startD",
+				"startDate"
+			],
+			[
+				"clear",
+				"clear_widgets"
+			],
+			[
+				"progre",
+				"progressBar"
+			],
+			[
+				"MAX",
+				"MAX_SOLAR_Y_DIMENSION"
+			],
+			[
+				"getSolar",
+				"getSolarEndDatetime"
+			],
+			[
+				"cumu",
+				"cumulativeArray"
+			],
+			[
+				"negat",
+				"negativeFilter"
+			],
+			[
+				"pypl",
+				"pyplotToImage"
+			],
+			[
+				"im",
+				"imdata"
+			],
+			[
+				"x",
+				"xPercent"
+			],
+			[
+				"En",
+				"endPicker"
+			],
+			[
+				"st",
+				"startPicker"
+			],
+			[
+				"NA",
+				"SOLAR_DATASET_NAME"
+			],
+			[
+				"timeD",
+				"timeDifference"
+			],
+			[
+				"min",
+				"minsDifference"
+			],
+			[
+				"en",
+				"endPicker"
+			],
+			[
+				"graph",
+				"graphContainer"
+			],
+			[
+				"BO",
+				"BOT_LEFT_LON"
+			],
+			[
+				"figure",
+				"figureToPng"
+			],
+			[
+				"Im",
+				"ImageLoaderPygame"
+			],
+			[
+				"me",
+				"memory_data"
+			],
+			[
+				"lab",
+				"label2"
+			],
+			[
+				"NUM",
+				"NUM_X_CELLS"
+			],
+			[
+				"label",
+				"labelText"
+			],
+			[
+				"mapPi",
+				"mapPinY"
+			],
+			[
+				"displa",
+				"displayErrorMessage"
+			],
+			[
+				"displ",
+				"displayErrorMessage"
+			],
+			[
+				"createD",
+				"createSolarDataset"
+			],
+			[
+				"SOLA",
+				"MAX_SOLAR_Y_DIMENSION"
+			],
+			[
+				"SOL",
+				"SOLAR_DATASET_NAME"
+			],
+			[
+				"SO",
+				"SOLAR_DATASET_NAME"
+			],
+			[
+				"data",
+				"databaseManager"
+			],
+			[
+				"valueLi",
+				"valueListIndex"
+			],
+			[
+				"first",
+				"firstIndex"
+			],
+			[
+				"MAX_",
+				"MAX_Y_DIMENSION"
+			],
+			[
+				"timeDiffe",
+				"timeDifferenceMinutes"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "view/limitedKivyView.py",
+			"settings":
+			{
+				"buffer_size": 12085,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "model/database/textDatabaseManager.py",
+			"settings":
+			{
+				"buffer_size": 5769,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sudo kivy /Volumes/SOLAR/solar-data-processing/main.py",
+			"file": "/Volumes/SOLAR/TimeseriesSolar.command",
+			"file_size": 54,
+			"file_write_time": 1397103899000000,
+			"settings":
+			{
+				"buffer_size": 54,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Using the Timeseries Data GUI.\n\nAt the moment, the GUI requires a little setup. \n\n1. Drag 'Kivy' to your applications folder.\n2. Double click 'make symlinks'\n3. Open 'Terminal' from your applications folder and type ",
+			"file": "/Volumes/SOLAR/README",
+			"file_size": 157,
+			"file_write_time": 1397103599000000,
+			"settings":
+			{
+				"buffer_size": 216,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controller.py",
+			"settings":
+			{
+				"buffer_size": 4803,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "model/database/databaseManager.py",
+			"settings":
+			{
+				"buffer_size": 18471,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "view/kivyView.py",
+			"settings":
+			{
+				"buffer_size": 12312,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "utils/fileIO.py",
+			"settings":
+			{
+				"buffer_size": 397,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"selected_items":
+		[
+			[
+				"rename",
+				"Rope Refactoring: Rename"
+			],
+			[
+				"renam",
+				"Rope Refactoring: Rename"
+			],
+			[
+				"refa",
+				"Rope Refactoring: Rename"
+			],
+			[
+				"rope refa",
+				"Rope Refactoring: Rename"
+			],
+			[
+				"rope",
+				"Rope Refactoring: Rename"
+			],
+			[
+				"refactor",
+				"Rope Refactoring: Restructure"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"package control in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/utils/fileIO.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/view/imageGenerator.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/main.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/view/kivyView.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/view/limitedKivyView.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/scripts/originalDataFiles/radiationAtLatLong.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/model/database/createDataset.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/model/database/databaseManager.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/view/mapPin.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/controller.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/test.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/model/environment/cosine.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/whereiskivy.py",
+		"/Users/lukemarshall/Documents/Workspace/PyInstaller-2.1/solarData/solarData.spec",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/view/flexidatetimepicker.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/scripts/ppaSim.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/view/textView.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/kivyView.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/fileIO.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/view/plotGenerator.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/view/view.kv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/combineNemData.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/databaseManager.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/cosine.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/createDataset.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/solarPlant.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/radiationAtLatLong.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/threadUtils.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/scripts/ppaSim",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/solar-data-processing.sublime-project",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/cosine.jar",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/optionPricer.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/sunapse-output/optimumSingleAxisAngles.csv",
+		"/Users/lukemarshall/Documents/Workspace/pvcosine/solarTools/cosineHeatmapper",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/algorithm.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/batteryStorage.py",
+		"/Users/lukemarshall/Desktop/AI Notes",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/imageGenerator.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/plotGenerator.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/timezone.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/nemData/nsw.csv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/nemData/qld.csv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/nemData/sa.csv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/nemData/snowy.csv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/nemData/tas.csv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/nemData/vic.csv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/market_testfiles/DATA201012_NSW1.csv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/(a+b+c) : 3",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/foo.py",
+		"/Users/lukemarshall/Desktop/lala",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/dynamicProgramming.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/dialogTester/main.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/dialogTester/editor.kv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/editor.kv",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/mapWidget.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/flexidatetimepicker.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/libs/garden/garden.datetimepicker/__init__.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/libs/garden/garden.datetimepicker/flexidatetimepicker.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/kivyViewTester.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/textView.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/testDatabaseCreator.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/2008/solar_dni_20110108_20UT.txt",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/untitled",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/solarDataTextUtils.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/timeSeries.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/solarDataUtils.py",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/2008/solar_dni_20120108_20UT.txt",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/2008/solar_dni_20120108_21UT.txt",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/2008/solar_dni_20130106_20UT.txt",
+		"/Users/lukemarshall/Documents/Workspace/solar-data-processing/testFile.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getSaveP",
+			"Clock",
+			"_popup",
+			"self.heatmapPopupDes",
+			"self.heatmapPopup",
+			"popup",
+			"progressbar",
+			"WINDOW_HE",
+			"error",
+			"path",
+			"var",
+			"[i]",
+			"startPick",
+			"timezone",
+			"self.start",
+			"displayImage",
+			"getIndex",
+			"Index",
+			"get",
+			"getIndex",
+			"getDa",
+			"plot",
+			"graph",
+			"Graph",
+			"graph",
+			"datetime",
+			"imageGenerator",
+			"getSave",
+			"getStartDate",
+			"Scatter",
+			"getDateOfIndex",
+			"xyToLatLong",
+			"path",
+			"datetime",
+			"tzin",
+			"minute",
+			"data",
+			"getSolarSta",
+			"test",
+			"datasetPath",
+			"getData",
+			"0.5",
+			"mult",
+			"lat",
+			"clock",
+			"progress",
+			"generateHeatmapButton",
+			"popup",
+			"controller.getTimeseriesData",
+			"graph",
+			"np.nan",
+			"nan",
+			"np.nan",
+			"self.progressBar",
+			"cancelledHeatmap",
+			"np.nan",
+			"-999",
+			"-888",
+			"self.getIndexOfDate",
+			"getIndexOfDate",
+			"self.getIndexOfDate",
+			"self.getDateFromFileName",
+			"self.",
+			"getValueAndLevel",
+			"getValue",
+			"maxValueStorageLevel",
+			"5",
+			"plantArea",
+			"data",
+			"progress",
+			"fiew",
+			"selecte",
+			"colors",
+			"-888",
+			"Symb",
+			"Dash(",
+			"now",
+			"view",
+			"timezone.timezone",
+			"()",
+			"f",
+			"F",
+			"f",
+			"MAX_Y_DIMENSION",
+			"MAX_X_DIMENSION",
+			"solarDatasetName",
+			"databaseCreator",
+			"dataFolder",
+			"fileName",
+			"getDesiredValueOfDataInFile",
+			"getFirstNumberOfDataInFile",
+			"desiredIndex",
+			"shape",
+			"k",
+			"		\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "view/limitedKivyView.py",
+					"settings":
+					{
+						"buffer_size": 12085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10612,
+								10612
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 332.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "model/database/textDatabaseManager.py",
+					"settings":
+					{
+						"buffer_size": 5769,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Volumes/SOLAR/TimeseriesSolar.command",
+					"settings":
+					{
+						"buffer_size": 54,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Volumes/SOLAR/README",
+					"settings":
+					{
+						"buffer_size": 216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "controller.py",
+					"settings":
+					{
+						"buffer_size": 4803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 319.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "model/database/databaseManager.py",
+					"settings":
+					{
+						"buffer_size": 18471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "view/kivyView.py",
+					"settings":
+					{
+						"buffer_size": 12312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								505,
+								505
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "utils/fileIO.py",
+					"settings":
+					{
+						"buffer_size": 397,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								397,
+								397
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 266.0,
+	"status_bar_visible": true
+}

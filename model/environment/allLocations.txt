@@ -1,0 +1,16 @@
+-33.86 ,151.20, nsw, Sydney, 90
+-29.47, 149.83, nsw, Moree, 90
+-35.29, 149.16, nsw, Royalla, 90
+-32.37, 150.98, nsw, Liddell, 90
+-32.59, 151.177, nsw, Singleton, 90
+-34.94, 138.59, sa, Adelaide, 90
+-36.59, 143.91, vic, Bridgewater, 90
+-37.86, 145.08, vic, Melbourne, 90
+-37.50, 143.80, vic, Ballarat, 90
+-36.75, 144.25, vic, Bendigo, 90
+-26.41, 142.66, qld, Windorah, 90
+-27.30, 153.03, qld, Coorparoo, 90
+-26.90, 150.733, qld, Kogan Creek, 90
+-26.54, 153.01, qld, Valdora, 90
+-20.67, 140.50, qld, Cloncurry, 90
+-27.50, 153.01, qld, Uni of Qld, 90

@@ -1,0 +1,7 @@
+Battery Type , Self-Discharge Per Day Percent, Cycle Efficiency Percent , Max Cycles , Max DoD , Cost 2014 AUD p kWh 
+Pb-A, 			0.06, 	78, 	2000, 	70, 	207, 	
+Tesla,  		0.03, 	92.5, 	5000, 	100, 	324, 
+Na-S-Toledo, 	20, 	90, 	6500, 	65, 	491, 
+Na-S-Divya, 	0, 		89, 	2500, 	100, 	491, 
+VRB, 			0, 		85,		10000, 	75, 	210, 	
+Ideal, 			0, 		100, 	10000,  100, 	0, 

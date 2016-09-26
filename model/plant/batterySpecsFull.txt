@@ -1,0 +1,6 @@
+Battery Type , Energy-Power Ratio , Self-Discharge Per Day Percent, Cycle Efficiency Percent , Max Cycles , Max DoD , Cost 2012 USD p kWh , Cost 2014 AUD p kWh 
+Li-Ion, 0.6, 	0.3, 	98, 	3000, 	80, 	600, 	600
+Pb-A, 	0.5, 	0.5, 	90, 	1800, 	80, 	200, 	200 
+Na-S, 	6, 		20, 	90, 	2500, 	100, 	350, 	350 
+VRB, 	6, 		0, 		80,		12000, 	100, 	150, 	150,
+Ideal, 	6, 		0, 		100, 	10000,  100, 	0, 		0

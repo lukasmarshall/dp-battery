@@ -1,0 +1,171 @@
+from controller import Controller
+from utils.timezone import SydneyTimezone
+import datetime
+import numpy as np
+from model.plant.solarPlant import SolarPlant
+import model.environment.locations as locations
+
+def printTimeseries(tracking, fractionContracted):
+	timePeriodHrs = 0.5
+	if tracking:
+		print "Tracking"
+		stateAveragesPath = "/Users/lukemarshall/Documents/Workspace/Thesis/simulationResults/market/peakload/tracking/average/"+str(fractionContracted)+"Contracted.csv"
+		averagesPath = "/Users/lukemarshall/Documents/Workspace/Thesis/simulationResults/market/peakload/tracking/averagesAll/"+str(fractionContracted)+"Contracted.csv"
+		yearlyPath = "/Users/lukemarshall/Documents/Workspace/Thesis/simulationResults/market/peakload/tracking/yearly/"+str(fractionContracted)+"Contracted.csv"
+
+	else:
+		print "Non-Tracking"
+		stateAveragesPath = "/Users/lukemarshall/Documents/Workspace/Thesis/simulationResults/market/peakload/fixed/average/"+str(fractionContracted)+"Contracted.csv"
+		averagesPath = "/Users/lukemarshall/Documents/Workspace/Thesis/simulationResults/market/peakload/fixed/averagesAll/"+str(fractionContracted)+"Contracted.csv"
+		yearlyPath = "/Users/lukemarshall/Documents/Workspace/Thesis/simulationResults/market/peakload/fixed/yearly/"+str(fractionContracted)+"Contracted.csv"
+
+	yearlyFile = open(yearlyPath, 'w')
+	averagesFile = open(averagesPath, 'w')
+	stateAveragesFile = open(stateAveragesPath, 'w')
+
+	yearlyFile.write("Location, State, Year, Average Market Price, Average Revenue, Total Generation MWh, Average PSH/Day, Value of Option, Count Over Strike And Generation, Count Over Strike No Generation\n" ) 
+	averagesFile.write("Location, State, Average Market Price, Average Revenue, Average Option Value, Average Count Strike And Generation, Average Count Over Strike No Generation\n")
+	stateAveragesFile.write("Location, Average Market Price, Average Revenue, Average Option Value, Average Count Strike And Generation, Average Count Over Strike No Generation\n")
+	stateAverages = [["nsw",0,0,0,0,0,0], ["qld",0,0,0,0,0,0], ["vic",0,0,0,0,0,0], ["sa",0,0,0,0,0,0]]
+
+	print "Beginning Baseload Peak Future Simulation"
+	controller = Controller(gui=False)
+	tz = SydneyTimezone()
+	inflation = 1.027
+
+	startHour = 7
+	finishHour = 22
+
+	for location in locations.getLocations():
+
+		lat= location[0]
+		lon = location[1]
+		state= location[2]
+		locationName = location[3]
+		print "==============="+locationName+"==============="
+		averageMarketPrice = averageRevenue  = averageCallValue = 0
+		averageCountOver300Gen = averageCountOver300NoGen = 0
+
+		startYear = 2005
+		endYear = 2011
+		for year in np.arange(startYear, endYear + 1):
+			print year
+			startDate = datetime.datetime(year=year, month=1, day=1, hour=1, tzinfo = tz)
+			endDate= datetime.datetime(year=year, month=12, day=31, hour=23, minute=30, tzinfo = tz)
+			data = controller.getTimeseriesNemDNICos(state=state, lat = lat, lon = lon, startDate = startDate, endDate = endDate)
+			plant = SolarPlant(namePlateMW = 1)
+			totalYearlyRevenue = totalYearlyMWh = totalYearlySpotPrice = totalYearlyPSH = optionValue = yearlyCountOverStrikeGen = yearlyCountOverStrikeNoGen = 0
+
+			# Find average spot price ie strike price
+			strikePrice = 0
+			for i in np.arange(data.shape[0]):
+				strikePrice = strikePrice + data[i][6]
+			strikePrice = np.divide(strikePrice, data.shape[0])
+			# average spot price/ strike price found.
+
+			for i in np.arange(data.shape[0]):
+				price = data[i][6]
+				dni = data[i][7]
+				date = datetime.datetime(year=int(data[i][0]), month = int(data[i][1]), day = int(data[i][2]), hour=int(data[i][3]), minute=int(data[i][4]), tzinfo=SydneyTimezone())
+				
+				if dni > 0:
+					if tracking:
+						cos = data[i][10]
+					else:
+						cos = data[i][9]
+					ghi_factor = data[i][8]
+					ghi = np.multiply(ghi_factor, dni)
+					output = plant.getPlantOutput(dni=dni, ghi=ghi, timePeriodHrs=0.5, cosine=cos)
+					totalYearlyPSH = totalYearlyPSH + (ghi/1000.0)
+				else:
+					cos = 0
+					ghi_factor = 0
+					ghi = 0
+					output = 0
+
+				# ######################################################################
+				# Put options pricing stuff here.
+				if date.hour >= startHour and date.hour <= finishHour:
+					if price > strikePrice:
+						payout = fractionContracted * float(price - strikePrice) * timePeriodHrs
+						optionValue = optionValue + payout
+						totalYearlyRevenue= totalYearlyRevenue + (output * price) - payout
+						if output > 0:
+							yearlyCountOverStrikeGen = yearlyCountOverStrikeGen + 1
+						else:
+							yearlyCountOverStrikeNoGen = yearlyCountOverStrikeNoGen + 1	
+					else:
+						payout = fractionContracted * float(strikePrice-price) * timePeriodHrs
+						optionValue = optionValue - payout
+						totalYearlyRevenue = totalYearlyRevenue + (output * price) + payout
+				else:
+					totalYearlyRevenue = totalYearlyRevenue + (output * price)
+				
+
+				totalYearlyMWh = totalYearlyMWh + output
+				totalYearlySpotPrice = totalYearlySpotPrice + price
+				# ######################################################################
+
+
+			# Calculate Yearly Averages
+			averageYearlyRevenue = np.divide(totalYearlyRevenue, totalYearlyMWh)
+			averageYearlyMarketPrice = np.divide(totalYearlySpotPrice, data.shape[0])
+			averagePshPerDay = (totalYearlyPSH / 365.0)
+
+			# Write to the yearly data file.
+			yearlyString =  locationName +", "+state+", "+ str(endDate.year) +", "+ str(np.round(averageYearlyMarketPrice, decimals = 2)) +", "+ str(np.round(averageYearlyRevenue, decimals = 2)) 
+			yearlyString = yearlyString + ", "+ str(totalYearlyMWh) + ", "+ str(averagePshPerDay)+ ", "+str(optionValue)+ ", "+str(yearlyCountOverStrikeGen)+ ", "+str(yearlyCountOverStrikeNoGen)+"\n"
+			yearlyFile.write(yearlyString)
+			print "Yearly data written to file."
+
+			# Add to cumulative totals for averaging.
+			averageCallValue = averageCallValue + optionValue
+			averageCountOver300Gen = averageCountOver300Gen + yearlyCountOverStrikeGen
+			averageCountOver300NoGen = averageCountOver300NoGen + yearlyCountOverStrikeNoGen
+			averageRevenue = averageRevenue +(averageYearlyRevenue  *  np.power(inflation, (2014 - year) ) )
+			averageMarketPrice = averageMarketPrice + (averageYearlyMarketPrice * np.power(inflation, 2014 - year))
+
+		# Write to the averages data file.
+		numYears = float(endYear - startYear + 1)
+		averageCountOver300Gen = averageCountOver300Gen / numYears
+		averageCountOver300NoGen = averageCountOver300NoGen / numYears
+		averageCallValue = averageCallValue / numYears
+		averageRevenue = averageRevenue / numYears
+		averageMarketPrice = averageMarketPrice / numYears
+
+		# Write averages to data file.
+		averageString = locationName +", "+state+", "+ str(np.round(averageMarketPrice, decimals = 2))+ ", "+ str(np.round(averageRevenue, decimals = 2))
+		averageString = averageString +", "+ str(averageCallValue)+", "+str(averageCountOver300Gen)+", "+str(averageCountOver300NoGen)+"\n"
+		averagesFile.write(averageString)
+		print "Averages written to file."
+
+		for stateAverage in stateAverages:
+			if state == stateAverage[0]:
+				stateAverage[1] = stateAverage[1] + averageMarketPrice
+				stateAverage[2] = stateAverage[2] + averageRevenue
+				stateAverage[3] = stateAverage[3] + averageCallValue
+				stateAverage[4] = stateAverage[4] + averageCountOver300Gen
+				stateAverage[5] = stateAverage[5] + averageCountOver300NoGen
+				stateAverage[6] = stateAverage[6] + 1
+
+	for stateAverage in stateAverages:
+		state = stateAverage[0]
+		count = float(stateAverage[6])
+
+		averageMarketPrice = float(stateAverage[1]) / count
+		averageRevenue = float(stateAverage[2]) / count
+		averageCallValue = float(stateAverage[3]) / count
+		averageCountOver300Gen = float(stateAverage[4]) / count
+		averageCountOver300NoGen = float(stateAverage[5]) / count
+		
+		averageString = state+", "+ str(np.round(averageMarketPrice, decimals = 2))+ ", "+ str(np.round(averageRevenue, decimals = 2))
+		averageString = averageString +", "+ str(averageCallValue)+", "+str(averageCountOver300Gen)+", "+str(averageCountOver300NoGen)+"\n"
+		stateAveragesFile.write(averageString)
+	
+	print "Finished"
+	stateAveragesFile.close()
+	averagesFile.close()
+	yearlyFile.close()
+
+
+
